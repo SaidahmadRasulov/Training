@@ -1,4 +1,4 @@
-<script setup>
+<script setup >
 import { defineProps } from 'vue';
 
 const props = defineProps({
@@ -7,6 +7,8 @@ const props = defineProps({
     required: true
   }
 });
+
+console.log(props)
 </script>
 
 <template>
@@ -76,8 +78,8 @@ const props = defineProps({
         <div class="cards flex flex-wrap gap-12 justify-center">
           <div class="card bg-white h-80 sm:w-[100%] md:w-[45%]" v-for="item in props.state" :key="item.id">
             <div class="card__header bg-cover bg-no-repeat relative">
-              <img :src='item.image' class="relative w-full" alt="">
-              <img src="../assets/soon.png" alt="" class="absolute right-0">
+              <img src="../assets/item.png" class="w-full" alt="">
+              <img src="../assets/soon.png" alt="" class="absolute right-4 top-2">
             </div>
             
             <div class="card__body px-2">
@@ -149,7 +151,6 @@ const props = defineProps({
     </div>
   </div>
 </template>
-
 
 <script>
 

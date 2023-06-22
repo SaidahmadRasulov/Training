@@ -2,7 +2,6 @@
   <div>
     <CNavbar />
     <RouterView :state="state" />
-    <img src="./assets/" alt="">
   </div>
 </template>
 <script lang="ts">
@@ -13,10 +12,10 @@ export default {
   data() {
       return {
         state: [
-          {id: 1, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', image: './assets/item.png'},
-          {id: 2, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', image: './assets/item.png'},
-          {id: 3, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', image: './assets/item.png'},
-          {id: 4, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', image: './assets/item.png'},
+          {id: 1, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', photo: './assets/item.png'},
+          {id: 2, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', photo: './assets/item.png'},
+          {id: 3, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', photo: './assets/item.png'},
+          {id: 4, title: 'Product Management', desc: 'Never lose sight of your DevOps infrastructure - learn the art of monitoring and logging', level: '#junior', date: '6 months', photo: './assets/item.png'},
         ]
       }
     },
