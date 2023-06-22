@@ -13,7 +13,7 @@ console.log(props)
 
 <template>
   <div class="sections flex justify-between">
-    <section class="py-4 left__section w-[20%] border-gray border-r-2 h-[100vh] sm:hidden lg:block">
+    <section class="py-4 left__section w-[20%] border-gray border-r-2 h-[120vh] sm:hidden lg:block">
       <div class="container">
         <h1 class="uppercase text-gray font-bold text-center mb-4">Main</h1>
         <ul class="text-gray h-[250px] mx-auto w-4/5 pl-32">
@@ -58,7 +58,7 @@ console.log(props)
         </ul>
       </div>
     </section>
-    <section class="main__section lg:w-[60%]">
+    <section class="main__section lg:w-[60%] pb-28">
       <div class="border-b-2 border-gray sm:hidden md:block">
         <ul class="main__nav md:flex mx-4 md:items-center md:gap-5 md:py-4 text-lg font-bold text-lightGray">
           <li class="main__nav_item">Articles</li>
@@ -112,7 +112,7 @@ console.log(props)
         </div>
       </div>
     </section>
-    <div class="py-4 h-[100vh] border-gray border-l-2 w-[20%] px-5 sm:hidden lg:block">
+    <div class="py-4 h-[120vh] border-gray border-l-2 w-[20%] px-5 sm:hidden lg:block">
       <ul class="general__groups">
         <li class="uppercase font-bold">Companies</li>
         <ul class="general__group my-4">
