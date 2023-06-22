@@ -1,16 +1,19 @@
-<script setup >
+<script setup lang="ts">
 import { defineProps } from 'vue';
 
+interface CourseItem {
+  title: string;
+  level: string;
+  date: string;
+  desc: string;
+}
+
 const props = defineProps({
-  state: {
-    type: Array,
-    required: true
-  }
+  state: { type: Array as () => CourseItem[], required: true },
 });
 
-console.log(props)
+console.log(props.state);
 </script>
-
 <template>
   <div class="sections flex justify-between">
     <section class="py-4 left__section w-[20%] border-gray border-r-2 h-[120vh] sm:hidden lg:block">
@@ -76,7 +79,7 @@ console.log(props)
       </div>
       <div class="main__content p-5">
         <div class="cards flex flex-wrap gap-12 justify-center">
-          <div class="card bg-white h-80 sm:w-[100%] md:w-[45%]" v-for="item in props.state" :key="item.id">
+          <div class="card bg-white h-80 sm:w-[100%] md:w-[45%]" v-for="item in props.state">
             <div class="card__header bg-cover bg-no-repeat relative">
               <img src="../assets/item.png" class="w-full" alt="">
               <img src="../assets/soon.png" alt="" class="absolute right-4 top-2">
@@ -152,9 +155,10 @@ console.log(props)
   </div>
 </template>
 
-<script>
+<script lang="ts">
 
 export default {
+
 }
 </script>
 <style>
