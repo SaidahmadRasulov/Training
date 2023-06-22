@@ -75,9 +75,11 @@ const props = defineProps({
       <div class="main__content p-5">
         <div class="cards flex flex-wrap gap-12 justify-center">
           <div class="card bg-white h-80 sm:w-[100%] md:w-[45%]" v-for="item in props.state" :key="item.id">
-            <div class="card__header bg-green-300 h-40 bg-cover bg-no-repeat" style="background-image: url('../assets/item_image.png') !important;">
-              <img src="../assets/soon.png" alt="" class="float-right">
+            <div class="card__header bg-cover bg-no-repeat relative">
+              <img :src='item.image' class="relative w-full" alt="">
+              <img src="../assets/soon.png" alt="" class="absolute right-0">
             </div>
+            
             <div class="card__body px-2">
               <div class="body__intro">
                 <div class="flex justify-between">
