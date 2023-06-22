@@ -98,7 +98,7 @@ console.log(props)
               </div>
             </div>
             <div class="card__footer px-4">
-              <div class="flex justify-between">
+              <div class="flex justify-between items-center">
                 <div class="button w-3/4">
                   <button class="w-full text-white rounded-md bg-indigo">Enroll</button>
                 </div>
